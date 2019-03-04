@@ -3,7 +3,7 @@ layout: getting_there
 title: Getting There
 weight: 3
 ---
-<!---
+
 ## Accommodation
 
 Some suggestions for accommodation close to the institute include
@@ -14,5 +14,4 @@ Some suggestions for accommodation close to the institute include
 
 The University of Sheffield also offers accommodation for visitors. Please, [see here](https://www.sheffield.ac.uk/accommodation/visitors)
 
-## Map
--->
+## Venue
