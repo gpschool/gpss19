@@ -1,7 +1,7 @@
 ---
 layout: getting_there
 title: Getting There
-weight: 3
+main: Y
 ---
 
 ## Accommodation
