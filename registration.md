@@ -10,8 +10,8 @@ weight: 5
 
 Attendee                          | Early Bird Rate | Regular Rate
 ----------------------------------|-----------------|--------------
-Academic                          |      260        |  420
-Industrial and Other Non-Academic |      730        |  730
+Academic                          |      270        |  450
+Industrial and Other Non-Academic |      750        |  750
 
 <br />
 
