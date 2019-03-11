@@ -31,13 +31,13 @@ Anaconda is a distribution of the Python prorgamming language that comes integra
 ### Installing
 The easiest way to get a working Python environment is to install Anaconda. It is fairly straightforward to install, but can take some time so you must make sure this is done before the lab.
 
-1. Download and install the free version of Anaconda from its webpage: [https://www.anaconda.com/download](https://www.anaconda.com/download), selecting the *Python 3.6 version* appropriate for your operating system
+1. Download and install the free version of Anaconda from its webpage: [https://www.anaconda.com/download](https://www.anaconda.com/download), selecting the *Python 3.7 version* appropriate for your operating system
   - Windows: the installer will be a `.exe` executable, and you can follow the setup as instructed
+  - macOS: the installer is a `.pkg` software package, and you can follow the setup as instructed
   - Linux: the installer is a `.sh` shell script, and you can run it in the terminal and follow the setup as instructed
     - Note you may have to enable execution of the file, by either
       - Right click the file and select Properties, and under `Permissions` check "Allow executing file as program"
       - `$ chmod +x /path/to/installationfile.sh`
-  - macOS: the installer is a `.pkg` software package, and you can follow the setup as instructed
 1. Update Anaconda, `numpy`, `scipy`, and `matplotlib`: open a command prompt or terminal and execute the following commands
   1. `conda update -y anaconda`
   1. `conda update -y numpy scipy matplotlib`
