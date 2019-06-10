@@ -17,7 +17,7 @@ Industrial and Other Non-Academic |      750        |  750
 
 **The Summer Schools if now fully booked**
 
-If you want to be added to the waiting list, please email Mauricio Álvarez at <mauricio.alvarez@sheffield.ac.uk>
+If you want to be added to the waiting list, please [contact us](mailto:mauricio.alvarez@sheffield.ac.uk).
 
 [//]: # (**All rates are in £(GBP). Early bird registration before 1st July**)
 
