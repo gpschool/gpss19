@@ -15,15 +15,17 @@ Industrial and Other Non-Academic |      750        |  750
 
 <br />
 
-**All rates are in £(GBP). Early bird registration before 1st July**
+**The Summer Schools if now fully booked**
 
-Follow the link below to register. Academics and members of our
-industrial club can register at the reduced rate. Other registrants need
-to register at the full cost.
+If you want to be added to the waiting list, please email Mauricio Álvarez at <mauricio.alvarez@sheffield.ac.uk>
 
-Registrants to the summer school can attend the workshop free of charge.
+[//]: # (**All rates are in £(GBP). Early bird registration before 1st July**)
 
-[**Link to registration**](https://onlineshop.shef.ac.uk/conferences-and-events/faculty-of-engineering/computer-science/summer-school-in-gaussian-processes-and-uncertainty-quantification)
+[//]: # (Follow the link below to register. Academics and members of our industrial club can register at the reduced rate. Other registrants need to register at the full cost.)
+
+[//]: # (Registrants to the summer school can attend the workshop free of charge.)
+
+[//]: # ([**Link to registration**](https://onlineshop.shef.ac.uk/conferences-and-events/faculty-of-engineering/computer-science/summer-school-in-gaussian-processes-and-uncertainty-quantification))
 
 
 If you have registered and need a visa to come to UK, please apply for a Standard visa. More details regards the visa application can be found
