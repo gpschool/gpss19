@@ -139,8 +139,6 @@ $ conda remove --name python_3_gpss --all
 If you have manually created your Conda environment, or would simply like to install these libraries in your base `python` environment, follow these instructions.
   
 ### GPy
-_**Important**: (advanced) before installing `GPy`, you may want to create a special Python environment for the summer school. Complete the steps to create a new environment before performing the following. See [Advanced: Creating a Python Environment for the Labs](#advanced-creating-a-python-environment-for-the-labs) for details._
-
 We will install `GPy` using `pip`, by performing the following command in the terminal/command prompt:
 
 ```
