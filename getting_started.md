@@ -11,18 +11,37 @@ The Gaussian Process Summer School will include some hands-on tutorials in which
 
 **Please bring your own laptop.** Prior Python programming skills are not required, however you should ensure that you have installed the appropriate version of Python and the packages/libraries we will be using:
 
-- **Python 3.5** (or 3.6)
+- **Python 3.6**
 - `numpy`
 - `scipy`
 - `matplotlib`
 - `GPy`
 - `jupyter`
 
-We highly recommend that you install an integrated Python environment, in particular [Anaconda](https://store.continuum.io/cshop/anaconda) which will allow for easy installation of packages. It also comes with the latest versions of `numpy` and `scipy`.
+Additional requirements include
+- `climin`
+- `GPyOpt`
+- `pyDeepGP`
 
 All labs are in a format called "_notebooks_", which can be run using [Jupyter](http://jupyter.org/index.html). These are worksheets that can execute Python code in blocks in your web browser.
 
+## Running Labs in Binder
+
+This year, we are hosting the labs on Binder, a cloud-based environment that you can use to run labs in. You can run the labs in Binder from your browser, without the need to setup a python environment locally on your machine.
+
+To access the labs on Binder, follow the appropriate links on the [Labs](../labs/) page. We recommend using Binder during the lab sessions.
+
+**Remember to download your notebooks if you would like to save them, as changes made will not be saved across different sessions.**
+
+## Running Labs on your Local Machine
+
+You may wish to run the labs on your local machine. You can do this by setting up a Python environment using the following instructions. We highly recommend that you install an integrated Python environment, in particular [Anaconda](https://store.continuum.io/cshop/anaconda) which will allow for easy installation of packages. It also comes with the latest versions of `numpy` and `scipy`.
+
 The following instructions will tell you how to install and setup the Python library for the tutorials, and some information on installing and running Jupyter.
+
+To use the notebooks locally, you should download the respective lab sheet. In a terminal window, navigate to the files path (using the `cd` command) and run the command `jupyter notebook`. This will open a browser window connecting to the (locally hosted) notebook server. The notebook should be visible in the file list.
+
+Typically, Jupyter will launch the server at [http://localhost:8888/tree](http://localhost:8888/tree), and you can navigate to it this way, should you accidentally close the window.
 
 ## Installing Python with Anaconda
 
@@ -45,36 +64,34 @@ The easiest way to get a working Python environment is to install Anaconda. It i
   1. `conda update -y jupyter`
   - If you are not using Anaconda, you can install `jupyter` by calling `$ python3 -m pip install juypter`
 
-## Installing GPy
-_**Important**: (advanced) before installing `GPy`, you may want to create a special Python environment for the summer school. Complete the steps to create a new environment (below) before performing the following. See [Advanced: Creating a Python Environment for the Labs](#advanced-creating-a-python-environment-for-the-labs) for details._
+## Setting up your Conda Environment with `environment.yml` [**recommended**]
+To setup an environment to use with the labs, we have provided a setup file that will allow Conda to automatically install the default libraries.
 
-We will install `GPy` using `pip`, by performing the following command in the terminal/command prompt:
+First, download [environment.yml](https://github.com/gpschool/labs/raw/2019/environment.yml).
 
-```$ pip install GPy```
-
-Installing `GPy` will also install its other dependencies, such as `paramz`, so you don't need to worry about these. You can test that the installation of `GPy` is working by running the following in a Python shell:
+Now, execute the following command in your command terminal, e.g. `Anaconda Prompt` or `terminal`:
 ```
+$ conda env create -f environment.yml
+```
+This will generate a Conda environment called `python_3_gpss` with all the packages required to run the labs. You can check this by running 
+```
+$ conda activate python_3_gpss
+(python_3_gpss) $ python
+
 >>> import GPy
 >>> GPy.tests()
+``` 
+
+You can now download the labs and run them in Jupyter notebook. To do this, you can either activate the environment and run `jupyter notebook`:
 ```
-This should run through the testing sequence.
+$ conda activate python_3_gpss
+(python_3_gpss) $ jupyter notebook
+```
+... or you can follow the instructions in [Using the New Environment in Jupyter](#using-the-new-environment-in-jupyter).
 
-Note that GPy currently has **not** been updated to work with Python 3.7 so you should avoid using this version. For details on how to create a working environment, see [Advanced: Creating a Python Environment for the Labs](#Advanced%3A-Creating-a-Python-Environment-for-the-Labs) for details.
+## Manually Creating an Environment with Conda
+**If you have used `environment.yml` to setup your environment, you don't need to do this.**
 
-## Running the Lab Sheets
-
-On the day of each tutorial, the respective lab sheet will be made available to download from the [Labs](./labs) page
-
-To use these notebooks, you should download the respective lab sheet. In a terminal window, navigate to the files path (using the `cd` command) and run the command `jupyter notebook`. This will open a browser window connecting to the (locally hosted) notebook server. The notebook should be visible in the file list.
-
-Typically, Jupyter will launch the server at [http://localhost:8888/tree](http://localhost:8888/tree), and you can navigate to it this way, should you accidentally close the window.
-
-## Advanced: Creating a Python Environment for the Labs
-If may be preferable to create a custom 'virtual' Python environment for use in the labs. A virtual environment gives you an isolated working copy of Python with its own files and packages, allowing you to specify versions of the Python executable and packages without affecting your main distribution. For example, if you predominantly use Python 2, you may want to create a Python 3 environment seperately for using the lab sheets (which make use of functionality not available in Python 2).
-
-The following instructions assume you are using **Anaconda**, but if not you may be able to replicate the behaviour using [`virtualenv`](https://virtualenv.pypa.io/en/stable/).
-
-### Creating a New Environment with Conda
 Full details of the functionality of `conda`'s virtual environment are available on its [documentation page](https://conda.io/docs/user-guide/tasks/manage-environments.html). The following instructions should get you a working environment with all the necessary features using a terminal. It is also possible to use Anaconda Navigator, if you have it installed, to perform these steps using a graphical user interface.
 
 In the following steps, we will name our environment "`python_3_gpss`", but you can name it whatever is most appropriate (just make sure you replace any mention of `python_3_gpss` with your preferred name). Likewise, we will use Python 3.6, though 3.5 may also be used, in which case replace `3.6` with `3.5` as appropriate. Setting the version is particularly important if you use Python 2 with Anaconda by default.
@@ -84,18 +101,13 @@ In a command prompt / terminal, execute the following line:
 $ conda create -y --name python_3_gpss python=3.6 anaconda
 ```
 
-This may take a while to install, as it is replicating the default Anaconda packages in the new environment (alternatively, you can customise the packages installed, but this is not recommended).
+This may take a while to install, as it is replicating the default Anaconda packages in the new environment (alternatively, you can customise the packages installed, as found in the provided environment.yml file).
 
-Next, you must "activate" the new environment. While an environment is activated (in a given terminal window), we will be able to access the `python` executable and install any packages by simply calling `python` and `pip`. Note that activation is _slightly_ different for Windows:
+Next, you must "activate" the new environment. While an environment is activated (in a given terminal window), we will be able to access the `python` executable and install any packages by simply calling `python` and `pip`:
 
-**Windows**:
+**Windows (using `Anaconda Prompt`) / Linux / macOS**:
 ```
-$ activate python_3_gpss
-```
-
-**Linux / macOS**:
-```
-$ source activate python_3_gpss
+$ conda activate python_3_gpss
 ```
 
 You will now see that the terminal prompt is prefixed by `(python_3_gpss)`. While this is here, we are in the activated environment, and you can now install `GPy` as described above. Make sure to run the tests, as described, to confirm the installation.
@@ -122,3 +134,47 @@ If you need to delete a created environment, for example if you make a mistake a
 ```
 $ conda remove --name python_3_gpss --all
 ```
+
+## Installing with Libraries with `pip`
+If you have manually created your Conda environment, or would simply like to install these libraries in your base `python` environment, follow these instructions.
+  
+### GPy
+_**Important**: (advanced) before installing `GPy`, you may want to create a special Python environment for the summer school. Complete the steps to create a new environment before performing the following. See [Advanced: Creating a Python Environment for the Labs](#advanced-creating-a-python-environment-for-the-labs) for details._
+
+We will install `GPy` using `pip`, by performing the following command in the terminal/command prompt:
+
+```
+$ pip install GPy
+```
+
+Installing `GPy` will also install its other dependencies, such as `paramz`, so you don't need to worry about these. You can test that the installation of `GPy` is working by running the following in a Python shell:
+```
+>>> import GPy
+```
+If you want to check your installation, you need to `$ pip install nose` and run `>>> GPy.tests()` in the Python shell. This will run through the testing sequence.
+
+Note that GPy currently has **not** been updated to work with Python 3.7 so you should avoid using this version. For details on how to create a working environment, see [Advanced: Creating a Python Environment for the Labs](#Advanced%3A-Creating-a-Python-Environment-for-the-Labs) for details.
+
+### GPyOpt
+
+```
+$ pip install gpyopt
+```
+Some of the options of GPyOpt depend on other external packages: DIRECT, cma, pyDOE. Please be sure that this are installed if you want to use all the options. With everything installed, you are ready to start.
+
+### pyDeepGP
+
+This is the library used for created deep Gaussian Processes with GPy.
+
+```
+$ pip install git+https://github.com/SheffieldML/pyDeepGP
+```
+
+### climin
+This is the library used for stochastic optimisation, and is required for the final section of Lab 2.
+
+```
+$ pip install git+https://github.com/BRML/climin
+``` 
+
+**Do not install `climin` from PyPI -- ensure you use the GitHub version as instructed**
