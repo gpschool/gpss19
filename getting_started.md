@@ -29,7 +29,7 @@ All labs are in a format called "_notebooks_", which can be run using [Jupyter](
 
 This year, we are hosting the labs on Binder, a cloud-based environment that you can use to run labs in. You can run the labs in Binder from your browser, without the need to setup a python environment locally on your machine.
 
-To access the labs on Binder, follow the appropriate links on the [Labs](../labs/) page. We recommend using Binder during the lab sessions.
+To access the labs on Binder, follow the appropriate links on the [Labs](./labs/) page. We recommend using Binder during the lab sessions.
 
 **Remember to download your notebooks if you would like to save them, as changes made will not be saved across different sessions.**
 
@@ -39,7 +39,7 @@ You may wish to run the labs on your local machine. You can do this by setting u
 
 The following instructions will tell you how to install and setup the Python library for the tutorials, and some information on installing and running Jupyter.
 
-To use the notebooks locally, you should download the respective lab sheet. In a terminal window, navigate to the files path (using the `cd` command) and run the command `jupyter notebook`. This will open a browser window connecting to the (locally hosted) notebook server. The notebook should be visible in the file list.
+To use the notebooks locally, you should download the respective lab sheet. In a terminal window, navigate to the file's path (using the `cd` command) and run the command `jupyter notebook`. This will open a browser window connecting to the (locally hosted) notebook server. The notebook should be visible in the file list.
 
 Typically, Jupyter will launch the server at [http://localhost:8888/tree](http://localhost:8888/tree), and you can navigate to it this way, should you accidentally close the window.
 
@@ -160,7 +160,7 @@ Note that GPy currently has **not** been updated to work with Python 3.7 so you 
 ```
 $ pip install gpyopt
 ```
-Some of the options of GPyOpt depend on other external packages: DIRECT, cma, pyDOE. Please be sure that this are installed if you want to use all the options. With everything installed, you are ready to start.
+Some of the options of GPyOpt depend on other external packages: `DIRECT`, `cma`, and `pyDOE`. Please be sure that these are installed if you want to use all the options. With everything installed, you are ready to start.
 
 ### pyDeepGP
 
