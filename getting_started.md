@@ -29,7 +29,7 @@ All labs are in a format called "_notebooks_", which can be run using [Jupyter](
 
 This year, we are hosting the labs on Binder, a cloud-based environment that you can use to run labs in. You can run the labs in Binder from your browser, without the need to setup a python environment locally on your machine.
 
-To access the labs on Binder, follow the appropriate links on the [Labs](./labs/) page. We recommend using Binder during the lab sessions.
+To access the labs on Binder, follow the appropriate links on the [Labs](./labs) page. We recommend using Binder during the lab sessions.
 
 **Remember to download your notebooks if you would like to save them, as changes made will not be saved across different sessions.**
 
