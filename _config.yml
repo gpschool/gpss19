@@ -51,7 +51,7 @@ conference:
   - 2019-09-11
   - 2019-09-12
   organizers:
-    - {given: Mauricio, family: Alvarez, url: "https://sites.google.com/site/maalvarezl/", institute: University of Sheffield}
+    - {given: Mauricio, family: Alvarez, url: "https://maalvarezl.github.io/", institute: University of Sheffield}
     - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
     - {given: Neil D., family: Lawrence, url: "http://inverseprobability.com", institute: Amazon Research Cambridge and University of Sheffield}
     - {given: Richard, family: Wilkinson, url: "http://r-wilkinson.staff.shef.ac.uk/", institute: University of Sheffield}
