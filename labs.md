@@ -30,7 +30,7 @@ As with Lab 1, the notebook uses GPy for handling the regression model and likel
 
 You will need to also download the banana.csv dataset for one of the examples in the lab.
 
-[![Download](https://img.shields.io/badge/download-lab%202-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
+[![Download](https://img.shields.io/badge/download-lab%202-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-nbviewer-green)](https://nbviewer.jupyter.org/github/gpschool/labs/blob/2019/2019/.answers/lab_2.ipynb)
 
 Resources: [olympic_marathon_men](https://github.com/gpschool/labs/raw/2019/.resources/olympic_marathon_men) | [banana.csv](https://github.com/gpschool/labs/raw/2019/.resources/banana.csv) 
 
@@ -40,7 +40,7 @@ Resources: [olympic_marathon_men](https://github.com/gpschool/labs/raw/2019/.res
 
 This lab introduces regression with hierarchical "deep" Gaussian processes. You will need to have installed `pyDeepGP` for this lab.
 
-[![Download](https://img.shields.io/badge/download-lab%202%20extra-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
+[![Download](https://img.shields.io/badge/download-lab%202%20extra-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-nbviewer-green)](https://nbviewer.jupyter.org/github/gpschool/labs/blob/2019/2019/.answers/lab_2_extra.ipynb)
 
 
 
