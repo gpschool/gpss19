@@ -30,15 +30,18 @@ As with Lab 1, the notebook uses GPy for handling the regression model and likel
 
 You will need to also download the banana.csv dataset for one of the examples in the lab.
 
-[![Download](https://img.shields.io/badge/unavailable-lab%202-red)](https://github.com/gpschool/labs/raw/2019/2019/lab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
+[![Download](https://img.shields.io/badge/download-lab%202-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
 
 Resources: [olympic_marathon_men](https://github.com/gpschool/labs/raw/2019/.resources/olympic_marathon_men) | [banana.csv](https://github.com/gpschool/labs/raw/2019/.resources/banana.csv) 
 
-<!-- 
+**Note: ensure you have installed libraries, particularly `climin`, as per the instructions in [Getting Started](./getting_started). Installing `climin` using `$ pip install climin` will not work with the labs as this is Python 2 only. Remove it, and follow the instructions.**
+
 #### Lab 2 Extra: Deep Gaussian Processes
 
-[![Download](https://img.shields.io/badge/unavailable-lab%202%20extra-red)](https://github.com/gpschool/labs/raw/2019/2019/lab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
--->
+This lab introduces regression with hierarchical "deep" Gaussian processes. You will need to have installed `pyDeepGP` for this lab.
+
+[![Download](https://img.shields.io/badge/download-lab%202%20extra-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_2_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
+
 
 
 ### Lab 3 : Global Optimisation with Gaussian Processes
