@@ -47,12 +47,5 @@ This lab introduces regression with hierarchical "deep" Gaussian processes. You 
 ### Lab 3: Global Optimisation with Gaussian Processes
 This lab introduces the basic concepts of Bayesian optimisation with GPyOpt. The student will have to build and compare different models and aquisition functions to solve several optimisation problems.
 
-[![Download](https://img.shields.io/badge/download-lab%203-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_3.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_3.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
-
-
-<!-- THIS DOESN'T EXIST !
-#### Lab 3 Extra: Unsupervised Learning with Gaussian Processes
-
-[![Download](https://img.shields.io/badge/unavailable-lab%203%20extra-red)](https://github.com/gpschool/labs/raw/2019/2019/lab_3_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_3_extra.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-unavailable-red)](#)
--->
+[![Download](https://img.shields.io/badge/download-lab%203-green)](https://github.com/gpschool/labs/raw/2019/2019/lab_3.ipynb)&nbsp;&nbsp;&nbsp;[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gpschool/labs/2019?filepath=2019%2Flab_3.ipynb)&nbsp;&nbsp;&nbsp;[![Answers](https://img.shields.io/badge/answers-nbviewer-green)](https://nbviewer.jupyter.org/github/gpschool/labs/blob/2019/2019/.answers/lab_3.ipynb)
 
