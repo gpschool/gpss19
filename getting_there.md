@@ -1,5 +1,5 @@
 ---
-layout: getting_there
+layout: default
 title: Getting There
 weight: 3
 ---
@@ -15,3 +15,10 @@ Some suggestions for accommodation close to the institute include
 The University of Sheffield also offers accommodation for visitors. Please, [see here](https://www.sheffield.ac.uk/accommodation/visitors)
 
 ## Venue
+
+{% if site.map.show %}
+{% include map.html %}
+{% endif %}
+
+<p></p>
+<p>The Summer School will take place in room <b>E05 and E06, Pam Liversidge Building, The University of Sheffield</b>.</p>

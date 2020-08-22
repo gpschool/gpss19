@@ -1,20 +1,26 @@
 # Site settings
 title: Gaussian Process and Uncertainty Quantification Summer School, 2019
-email:
+author:
+  email:
 description: > # this means to ignore newlines until "baseurl:"
   Gaussian Process Summer School
 baseurl: "/gpss19" # the subpath of your site, e.g. /blog/
 url: "http://gpss.cc" # the base hostname & protocol for your site
-logo: "gpss_logo.svg"
 twitter_username: sheffieldmlnet
 github_username:  gpschool
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+style: gpss
 
 
 youtube:
   height: 315
   width: 560
 
-github:
+ghub:
   edit: true
   repository: gpss19
 
@@ -38,9 +44,9 @@ conference:
   draft: false # set to True if the programme is draft only.
   hide_tentative: true
   hosts:
-
-  room: Pam Liversidge Building, PLB-E05
-  venue: The University of Sheffield
+  short_name: GPSS
+  full_name:  Gaussian Process and Uncertainty Quantification Summer School
+  venue: Pam Liversidge Building, PLB-E05, The University of Sheffield
   location: Sheffield, UK
   name: Gaussian Process Summer School
   year: 2019
@@ -50,7 +56,9 @@ conference:
   - 2019-09-10
   - 2019-09-11
   - 2019-09-12
-  organizers:
+  chairs:
+  - type: Organizers
+    people:
     - {given: Mauricio, family: Alvarez, url: "https://maalvarezl.github.io/", institute: University of Sheffield}
     - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Cambridge}
     - {given: Neil D., family: Lawrence, url: "http://inverseprobability.com", institute: University of Sheffield}
