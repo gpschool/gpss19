@@ -8,11 +8,12 @@ baseurl: "/gpss19" # the subpath of your site, e.g. /blog/
 url: "http://gpss.cc" # the base hostname & protocol for your site
 twitter_username: sheffieldmlnet
 github_username:  gpschool
+
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-remote-theme
-remote_theme: lawrennd/proceedings
+remote_theme: gpschool/jekyll-theme
 style: gpss
 
 
